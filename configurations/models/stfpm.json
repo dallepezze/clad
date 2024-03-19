@@ -1,0 +1,31 @@
+{   "channels":3,
+    "gray":false,
+    "apply_rotation":false,
+    "lr_scheduler":false,
+    "img_size":256,
+    "crp_size":256,
+    "num_tasks": 10,
+
+    "num_epochs":30,
+    "batch_size": 4,
+    "lr": 0.4,
+    "weight_decay": 1e-5,
+    "b1": 0.5,
+    "b2": 0.999, 
+
+    "criterion_type":"mse",
+    "activation":"ReLU",
+    "dropout1":true,
+    "dropout2":false,
+    "device_name": "cuda:0",
+    "dataset_name": "mvtec",
+    "transformation":"None",
+    "task_order":[0,1,2,3,4,5,6,7,8,9],
+    "num_samples_memory":10,
+    "sample_size_per_class":400,
+    "beta":1,
+    "anomaly_task_id":false,
+    "normalize_img":true,
+    "resize":256
+
+}

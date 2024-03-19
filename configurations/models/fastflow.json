@@ -1,0 +1,32 @@
+{   
+    "num_tasks": 10,
+    "lr_scheduler":false,
+    "img_size":256,
+    "latent_dim":0,
+
+    "batch_size": 32,
+    "lr": 0.001,
+    "b1":0.5,
+    "b2":0.99,
+    "weight_decay": 0.00001,
+
+    "backbone": "resnet18",
+    "pre_trained": true,
+    "flow_steps": 8,
+    "hidden_ratio": 1.0, 
+    "conv3x3_only": true, 
+
+    "criterion_type":"mse",
+    "activation":"ReLU",
+    "device_name": "cuda:0",
+    "transformation":"None",
+    "task_order":[0,1,2,3,4,5,6,7,8,9], 
+    "num_samples_memory":10,
+    "sample_size_per_class":1000,
+    "beta":1,
+    "anomaly_task_id":false,
+    
+    "patience": 3,
+    "mode_early": "max",
+    "fast_flow_normalize":false
+}

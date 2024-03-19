@@ -1,0 +1,35 @@
+{ 
+    "device_id":1,
+    "lr_scheduler":true,
+    "early_stopping":true,
+
+    "num_tasks": 10,
+    "scheduler":false,
+    "latent_dim":512,
+    "num_epochs":50,
+    "batch_size": 4,
+    "mem_size":100,
+    "lr": 0.0001,
+    "b1": 0.5,
+    "b2": 0.999,
+
+    "task_order":[0,1,2,3,4,5,6,7,8,9],
+    "num_samples_memory":10,
+    "sample_strategy":"naive",
+    "sample_size_per_class":1000,
+    "architecture":"cae",
+    "beta":1,
+    "anomaly_detection_task":true,
+    "anomaly_task_id":false,
+
+    "resize":256,
+    "tags":["cae","256x256 size","replay","ad"],
+
+    "memory_dataset_path":"/media/statwolf_disk/MVTEC-522",
+    "k_value":[2, 4, 8, 16],
+    "alpha":1.0,
+    "belta":1.0,
+    "gamma":1.0,
+
+    "type_test":"model"
+}
